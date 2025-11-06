@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html,body{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    place-items: center;
+    background: #456ABD;
+    transition: background 0.3s ease;
+
+}
+
+.container{
+    position: relative;
+    height: 500px;
+    width: 380px;
+    background: #fff;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+.container:hover{
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container .image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.container .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+
+}
+.container:hover  .image img{
+    transform: scale(1.1);
+}
+
+.container .card-content{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.container:hover .wrapper{
+    bottom: 0px;
+}
+.card-content .wrapper{
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    bottom: -100%;
+    padding: 10px 25px;
+    box-shadow: -1px -1px 6px rgba(0, 0, 0, 0.2);
+    transition: bottom 0.3s ease;
+}
+
+.wrapper .title{
+    font-size: 22px;
+    font-weight: 500;
+}
+.wrapper p{
+    font-size: 17px;
+    color: grey;
+}
+.wrapper .price{
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    color: #456ABD;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.wrapper .content{
+    margin: 10px 0;
+}
+.wrapper .content .name{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.content .size-value{
+    display: flex;
+    width: 50%;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+.content .size-value span{
+    display: block;
+    height: 28px;
+    width: 28px;
+    /* background: red; */
+    text-align: center;
+    color: #456ABD;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 28px;
+    cursor: pointer;
+}
+
+.content .size-value span.active{
+    background: #456ABD;
+    color: #fff;
+}  
+
+.content .colour-value{
+    display: flex;
+    width: 30%;
+    margin: 10px 0px;
+    justify-content: space-between;
+}
+.content .colour-value span{
+    height: 18px;
+    width: 18px;
+    background: #EAA523;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+
+}
+.content .colour-value span.white{
+    background: lightgrey;
+    
+}
+.content .colour-value span.blue{
+    background: #456ABD;
+}
+.content .colour-value span.yellow{
+    background: #EAA523;
+}
+.content .colour-value span.active:after{
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    top: -4px;
+    left: -4px;
+    border: 2px solid #EAA523;
+    box-sizing: border-box;
+    border-radius: 50%;
+    /* color: #fff; */
+}
+.wrapper .btns{
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.wrapper .btns button{
+    width: 100%;
+    height: 50%;
+    margin: 0 10px;
+    border: 2px solid #456ABD;
+    background: #456ABD;
+    outline: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.content .colour-value span.white.active:after{
+border-color: lightgrey;
+}
+.content .colour-value span.blue.active:after{
+border-color: #456ABD;
+}
+.content .colour-value span.yellow.active:after{
+border-color: #EAA523;
+}

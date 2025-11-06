@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with 3D</title>
+    <link rel="stylesheet" href="css/Card_with_3D.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"  />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <div class="card">
+        <div class="content">
+            <div class="user">
+                <span class="ri-user-fill"></span>
+            </div>
+            <header>Coding Tech</header>
+            <div class="follow-us">Follow us</div>
+            <div class="icons">
+                <a href=""><span class="ri-facebook-fill"></span></a>
+                <a href=""><span class="ri-twitter-fill"></span></a>
+                <a href=""><span class="ri-instagram-fill"></span></a>
+                <a href=""><span class="ri-linkedin-fill"></span></a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        $('body').mousemove(function(p){
+            let rotateX = -($(window).innerWidth()/2 - p.pageX)/20;
+            let rotateY = -($(window).innerHeight()/2 - p.pageY)/10;
+            $('.card').css('transform','rotateX('+rotateX+'deg) rotateY('+rotateY+'deg)');
+        });
+        $(document).mouseout(function(){
+            $('.card').css('transform','rotateX(0deg) rotateY(0deg)');
+        })
+
+    </script>
+</body>
+</html>

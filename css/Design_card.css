@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.cards{
+    max-width: 1100px;
+    /* height: auto; */
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    
+}
+.cards h1{
+    font-size: 40px;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.services{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.content:hover{
+    color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    transform: translateY(-10px);
+}
+.content i{
+    font-size: 70px;
+    margin: 16px 0;
+}
+.content > *{
+    flex: 1 1 100%;
+    margin-bottom: 20px;
+}
+.content h2{
+    font-size: 30px;
+    margin: 16px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.content p{
+   font-size: 17px;
+   margin-bottom: 30px;
+}
+
+.content a{
+   margin: 22px 0;
+   background: #000;
+   color: #fff;
+   text-decoration: none;
+   text-transform: uppercase;
+   border: 1px solid #000;
+   padding: 15px 40px;
+   border-radius: 25px;
+   transition: all 0.3s ease;
+   /* width: 100%; */
+}
+.content:hover a{
+    border-color: #fff;
+   background: #fff !important;
+   
+}
+.content1:hover{
+    border-color: #1da1f2;
+    background: #1da1f2;
+}
+.content1:hover a{
+   color: #1da1f2;
+    background: #1da1f2;
+}
+
+.content2:hover{
+    border-color: #e1306c;
+    background: #e1306c;
+}
+.content2:hover a{
+   color: #e1306c;
+    background: #e1306c;
+}
+
+.content3:hover{
+    border-color: #ff0000;
+    background: #ff0000;
+}
+.content3:hover a{
+   color: #ff0000;
+    background: #ff0000;
+}
+.content a:hover{
+   border-radius: 4px;
+   
+}
+
+@media (max-width: 900px)
+ {
+    .services{
+        display: flex;
+        flex-direction: column;
+    }
+}

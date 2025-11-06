@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Profile Card</title>
+    <link rel="stylesheet" href="css/Animated_Profile_Card.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"/>
+
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <a href="#">
+                <img src="img/icon1.jpg" alt="">
+            </a>
+   
+                <div class="title">Andrew Neil</div>
+                <div class="place">Housten , NYC</div>
+          
+        </div>
+        <div class="content">
+            <p>User Interface Designer and <br><b>front-end developer</b></p>
+            <div class="buttons">
+                <div class="btn">
+                    <button>Message</button>
+                </div>
+                   <div class="btn">
+                    <button>Following</button>
+                </div>
+            </div>
+        </div>
+        <div class="icons">
+            <li><a href="">
+                <span><i class="ri-facebook-fill"></i></span>
+            </a></li>
+            <li><a href="">
+                <span><i class="ri-twitter-fill"></i></span>
+            </a></li>
+            <li><a href="">
+                <span><i class="ri-instagram-fill"></i></span>
+            </a></li>
+        </div>
+    </div>
+    <script>
+        const img = document.querySelector("img");
+        img.onclick = function(){
+            this.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>

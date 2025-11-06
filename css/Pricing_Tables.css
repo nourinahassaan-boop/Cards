@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh ;
+    background: #647df9;
+    padding: 20px;
+}
+.wrapper{
+    max-width: 1090px;
+    width: 100%;
+    /* background-color: white; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+    position: relative;
+}
+.wrapper .table{
+  background: #fff;
+  width: calc(33% - 20px);
+  padding: 30px 30px;
+  position: relative;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.table .price-section{
+    display: flex;
+    justify-content: center;
+}
+ .price-section .price-area{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: #ffd861;
+    padding: 2px;
+ }
+ .price-area .inner-area{
+    height: 100%;
+    width: 100%;
+    /* background: #ffd861; */
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #fff;
+    line-height: 117px;
+    text-align: center;
+    position: relative
+ }
+  .price-area .inner-area .text{
+    font-size: 25px;
+    font-weight: 600;
+     position: absolute;
+    top: -10px;
+    left: 17px;
+  }
+  .price-area .inner-area .price{
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 16px;
+   
+  }
+   .table .package-name{
+    width: 100%;
+    height: 2px;
+    background: #ffecb3;
+    margin: 35px 0;
+    position: relative;
+   }
+   .table .package-name::before{
+    position: absolute;
+    content: "Basic";
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    padding: 0 15px;
+    transform: translate(-50%, -50%);
+   }
+
+   .table .features li{
+    margin-bottom: 15px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+   }
+   .features li .list-name{
+    font-size: 17px;
+    font-weight: 400;
+   }
+   .features li .icon{
+    font-size: 15px;
+   }
+    .features li .icon.check{
+   color: #2db94d;
+   }
+    .features li .icon.close{
+   color: #cd3241;
+   }
+   .table .btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+   }
+
+   .table .btn button{
+    width: 80%;
+    height: 50px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    /* background: #ffd861; */
+    border-radius:25px ;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+   }
+   .table ::selection{
+    color: #fff;
+   }
+
+   .table .btn button:hover{
+    border-radius: 5px;
+   }
+   .basic ::selection,
+   .basic .price-area,
+   .basic .inner-area
+   {
+    background: #ffd861;
+    
+   }
+
+    .ultimate ::selection,
+   .ultimate .price-area,
+   .ultimate .inner-area
+   {
+    background: #43ef8b;
+    
+   }
+
+   .premium ::selection,
+   .premium .price-area,
+   .premium .inner-area
+   {
+    background: #a26bfa;
+    
+   }
+
+   .basic .btn button{
+    background: #fff;
+    border: 2px solid #ffd861;
+    color: #ffd861;
+   }
+   .basic .btn button:hover{
+    color: #fff;
+    background: #ffd861;
+   }
+
+   .premium .price-area,
+   .premium .inner-area,
+   .premium .btn button{
+    background: #a26bfa;
+   }
+
+     .ultimate .price-area,
+     .ultimate .inner-area{
+         background: #43ef8b;
+     }
+     .ultimate .btn button{
+        background: #fff;
+        color: #43ef8b;
+        border: 2px solid #43ef8b;
+     }
+     .ultimate .btn button:hover{
+         background: #43ef8b;
+        color: #fff;
+     }
+
+     .basic .package-name{
+        background-color: #ffecb3;
+     }
+
+     .basic .package-name::before{
+        content: "Basic";
+     }
+
+      .ultimate .package-name::before{
+        content: "Ultimate";
+     }
+
+       .premium .package-name::before{
+        content: "Premium";
+     }
+
+     .premium .package-name{
+        background-color: #d0b3ff;
+     }
+     .ultimate .package-name{
+        background-color: #baf8d4;
+     }
+      
+        .table .ribbon::before,
+        .table .ribbon::after{
+            position: absolute;
+            content: "";
+            z-index: -1;
+            display: block;
+            border: 7px solid #43ef8b;
+            border-top-color: transparent;
+            border-left-color: transparent;
+        }
+        .table .ribbon::before{
+            top: 0px;
+            right: 15px;
+        }
+
+         .table .ribbon::after{
+            bottom: 15px;
+            left: 0px;
+        }
+
+     .table .ribbon{
+        height: 150px;
+        width: 150px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        overflow: hidden;
+     }
+     .table .ribbon span{
+        position: absolute;
+        background-color: #a26bfa;
+        width: 200px;
+        padding: 10px 0;
+        color: #fff;
+        text-align: center;
+        top: 30px;
+        right: 0px;
+        transform: rotate(-45deg);
+        text-transform: uppercase;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.12);
+     }
+
+   @media (max-width:1020px) {
+    .wrapper .table{
+        width: calc(50% 20px);
+        margin-bottom:40px;
+    }
+   }
+
+   
+   @media (max-width:698px) {
+    .wrapper .table{
+        width: 100%;
+        margin-bottom:40px;
+    }
+   }

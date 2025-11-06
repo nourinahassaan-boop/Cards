@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/Image_Slider.css">
+</head>
+<body>
+    <section class="main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/slider1.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the smooth skin with glow</span>
+                    <h2>Enjoy our exclusive offer</h2>
+                    <a href="" class="button">About us</a>
+                </div>
+            </div>
+
+             <div class="slide swiper-slide">
+                <img src="img/slider2.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Enjoy the smooth skin with glow</span>
+                    <h2>Enjoy our exclusive offer</h2>
+                    <a href="" class="button">About us</a>
+                </div>
+            </div>
+
+             <div class="slide swiper-slide">
+                <img src="img/slider4.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Coffee Bean with perfect Aroma</span>
+                    <h2>Enjoy our exclusive offer</h2>
+                    <a href="" class="button">About us</a>
+                </div>
+            </div>
+
+             <div class="slide swiper-slide">
+                <img src="img/slider5.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">We really like what we do</span>
+                    <h2>Enjoy our exclusive offer</h2>
+                    <a href="" class="button">About us</a>
+                </div>
+            </div>
+
+             <div class="slide swiper-slide">
+                <img src="img/slider6.jpg" alt="" class="image">
+                <div class="image-data">
+                    <span class="text">Making our coffee with love</span>
+                    <h2>Enjoy our exclusive offer</h2>
+                    <a href="" class="button">About us</a>
+                </div>
+            </div>
+        </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination nav-btn"></div>
+    </section>
+
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+</html>
